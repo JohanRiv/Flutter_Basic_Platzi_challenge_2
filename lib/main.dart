@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(FirstPage());
 }
 
-class MyApp extends StatelessWidget {
+class FirstPage extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -15,16 +15,14 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Navigate to new Page'),
+            title: Text('Navigate to challenge Page'),
           ),
           body: Center(
-            child: ElevatedButton(
-              child: Text('Nav to new page'),
+            child: TextButton(
+              child: Text('Nav to challenge'),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SecondPage())
-                );
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SecondPage()));
               },
             ),
           )),
@@ -34,13 +32,23 @@ class MyApp extends StatelessWidget {
 
 class SecondPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Reto de JohanRiv'),
+        title: Text('Reto de JohanRiv - Share'),
       ),
       body: Center(
-        child: ,
+        child: Stack(
+          children: [
+            Container(
+              child: Image.network(
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+            ),
+            Container(
+              child: Text('Naughty'),
+            )
+          ],
+        ),
       ),
     );
   }
