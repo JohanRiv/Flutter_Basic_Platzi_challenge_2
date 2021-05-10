@@ -49,15 +49,16 @@ class SecondPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Reto de JohanRiv - Share'),
       ),
-      body: Center(
+      body: Container(
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+          image: AssetImage('assets/images/background.jpg'),
+          fit: BoxFit.cover,
+        )),
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Container(
-              alignment: Alignment.center,
-              child: Image.network(
-                  'https://previews.123rf.com/images/archon7th/archon7th1901/archon7th190100126/123356127-comic-space-with-stars-funny-astronauts-and-spaceships-seamless-pattern.jpg'),
-            ),
             Container(
               height: 30,
               alignment: Alignment.center,
