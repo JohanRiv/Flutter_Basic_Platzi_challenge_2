@@ -1,8 +1,12 @@
 # platzi_reto_2
 
-A new Flutter project.
+A new Flutter project to complete the challenge 2 for couser of Flutter in Platzi.
 
 ## Getting Started
+
+This project looks this:
+
+![alt text](https://github.com/JohanRiv/Flutter_Basic_Platzi_challenge_2/blob/master/img_project_sample.png?raw=true)
 
 This project is a starting point for a Flutter application.
 
